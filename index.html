@@ -1,0 +1,1440 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="logo.ico">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/icofont.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg main-navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                
+                </a>
+
+                <!-- Buttons Group -->
+                <div class="btns-header-group d-sm-flex d-lg-none">
+                    <span data-bs-toggle="modal" data-bs-target="#login-modal">
+                        <a class="auth-btn me-3" data-bs-toggle="tooltip" title="Login / Register" href="javascript:void(0)">
+                            <i class="icofont-ui-user"></i>
+                            <!-- Login / Register -->
+                        </a>
+                    </span>
+
+                    <a class="me-3 search-btn-header" data-bs-toggle="tooltip" title="Search" href="#">
+                        <i class="icofont-search"></i>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <i class="icofont-navigation-menu"></i>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav flex-md-wrap main-menu m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Movies</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="movies.html">Action</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Adventure</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Biography</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Christmas</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Comedy</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Crime</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Documentary</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Drama</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Family</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Fantasy</a></li>
+                                <li><a class="dropdown-item" href="movies.html">Foreign</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">TV
+                                Series</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="episodes.html">Action</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Adventure</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Animation</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Biography</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Christmas</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Comedy</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Crime</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Documentary</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Drama</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Family</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Fantasy</a></li>
+                                <li><a class="dropdown-item" href="episodes.html">Foreign</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="episodes.html">TV programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="movies.html">Top IMDB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Other</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav d-none d-lg-flex me-left">
+                        <li class="nav-item">
+                            <a class="me-3 search-btn-header" data-bs-toggle="tooltip" title="Search" href="javascript:void(0)">
+                                <i class="icofont-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <span data-bs-toggle="modal" data-bs-target="#login-modal">
+                                <a class="auth-btn" data-bs-toggle="tooltip" title="Login / Register" href="javascript:void(0)">
+                                    <i class="icofont-ui-user"></i>
+                                    <!-- Login / Register -->
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="media-section">
+        <div class="container-fluid-">
+            <div class="media-slider">
+                <!-- start media-box -->
+                <div class="media-box">
+                    <a href="single-episode.html" class="full-click"></a>
+                    <div class="media-thumb" style="background-image: url(images/tulsa-king-season-1-1630854430.webp);">
+                    </div>
+
+                    <!-- Start media-play -->
+                    <a href="single-episode.html" class="media-play">
+                        <i class="icofont-ui-play"></i>
+                    </a>
+                    <!-- Start episode-info -->
+                    <div class="episode-info">
+                        <!-- Start media-box-number -->
+                        <span class="media-box-number d-block">
+                            Episode
+                            <em>21</em>
+                        </span>
+                        <!-- Start season -->
+                        <span class="season">
+                            <i class="icofont-book-mark"></i>
+                            S01
+                        </span>
+                    </div>
+                    <!-- Start rate-quality-info -->
+                    <div class="rate-quality-info">
+                        <span class="media-badge bg-dark">HD</span>
+                        <span class="rate icofont-star">7.8</span>
+                    </div>
+                    <div class="media-info">
+                        <a href="episodes.html" class="media-box-category">
+                            <i class="icofont-video-alt"></i>
+                            English TV series
+                        </a>
+                        <h5 class="media-box-title">Tulsa King – Season 1</h5>
+                    </div>
+                </div>
+                <!-- end media-box -->
+
+                <!-- start media-box -->
+                <div class="media-box">
+                    <a href="single-movie.html" class="full-click"></a>
+                    <div class="media-thumb" style="background-image: url(images/scrooge-a-christmas-carol-1630854525.jpg);">
+                    </div>
+
+                    <!-- Start media-play -->
+                    <a href="single-movie.html" class="media-play">
+                        <i class="icofont-ui-play"></i>
+                    </a>
+                    <!-- Start rate-quality-info -->
+                    <div class="rate-quality-info">
+                        <span class="media-badge bg-dark">HD</span>
+                        <span class="rate icofont-star">9.8</span>
+                    </div>
+                    <div class="media-info">
+                        <a href="movies.html" class="media-box-category">
+                            <i class="icofont-video-alt"></i>
+                            Movies
+                        </a>
+                        <h5 class="media-box-title">Scrooge: A Christmas Carol</h5>
+                    </div>
+                </div>
+                <!-- end media-box -->
+
+                <!-- start media-box -->
+                <div class="media-box">
+                    <a href="single-episode.html" class="full-click"></a>
+                    <div class="media-thumb" style="background-image: url(images/csi-vegas-season-2-1630854185.jpg);">
+                    </div>
+
+                    <!-- Start media-play -->
+                    <a href="single-episode.html" class="media-play">
+                        <i class="icofont-ui-play"></i>
+                    </a>
+                    <!-- Start episode-info -->
+                    <div class="episode-info">
+                        <!-- Start media-box-number -->
+                        <span class="media-box-number d-block">
+                            Episode
+                            <em>8</em>
+                        </span>
+                        <!-- Start season -->
+                        <span class="season">
+                            <i class="icofont-book-mark"></i>
+                            S02
+                        </span>
+                    </div>
+                    <!-- Start rate-quality-info -->
+                    <div class="rate-quality-info">
+                        <span class="media-badge bg-dark">HD</span>
+                        <span class="rate icofont-star">8.5</span>
+                    </div>
+                    <div class="media-info">
+                        <a href="episodes.html" class="media-box-category">
+                            <i class="icofont-video-alt"></i>
+                            English TV series
+                        </a>
+                        <h5 class="media-box-title">CSI: Vegas - Season 2</h5>
+                    </div>
+                </div>
+                <!-- end media-box -->
+
+                <!-- start media-box -->
+                <div class="media-box">
+                    <a href="single-movie.html" class="full-click"></a>
+                    <div class="media-thumb" style="background-image: url(images/black-panther-wakanda-forever-1630854429.jpg);">
+                    </div>
+
+                    <!-- Start media-play -->
+                    <a href="single-movie.html" class="media-play">
+                        <i class="icofont-ui-play"></i>
+                    </a>
+                    <!-- Start rate-quality-info -->
+                    <div class="rate-quality-info">
+                        <span class="media-badge bg-dark">CAM</span>
+                        <span class="rate icofont-star">8.8</span>
+                    </div>
+                    <div class="media-info">
+                        <a href="movies.html" class="media-box-category">
+                            <i class="icofont-video-alt"></i>
+                            Movies
+                        </a>
+                        <h5 class="media-box-title">Black Panther: Wakanda Forever</h5>
+                    </div>
+                </div>
+                <!-- end media-box -->
+
+                <!-- start media-box -->
+                <div class="media-box">
+                    <a href="single-movie.html" class="full-click"></a>
+                    <div class="media-thumb" style="background-image: url(images/grimcutty-1630854259.jpg);">
+                    </div>
+
+                    <!-- Start media-play -->
+                    <a href="single-movie.html" class="media-play">
+                        <i class="icofont-ui-play"></i>
+                    </a>
+                    <!-- Start rate-quality-info -->
+                    <div class="rate-quality-info">
+                        <span class="media-badge bg-dark">HD</span>
+                        <span class="rate icofont-star">8.5</span>
+                    </div>
+                    <div class="media-info">
+                        <a href="movies.html" class="media-box-category">
+                            <i class="icofont-video-alt"></i>
+                            Movies
+                        </a>
+                        <h5 class="media-box-title">Grimcutty</h5>
+                    </div>
+                </div>
+                <!-- end media-box -->
+
+                <!-- start media-box -->
+                <div class="media-box">
+                    <a href="single-episode.html" class="full-click"></a>
+                    <div class="media-thumb" style="background-image: url(images/mythic-quest-season-3-1630854423.jpg);">
+                    </div>
+
+                    <!-- Start media-play -->
+                    <a href="single-episode.html" class="media-play">
+                        <i class="icofont-ui-play"></i>
+                    </a>
+                    <!-- Start episode-info -->
+                    <div class="episode-info">
+                        <!-- Start media-box-number -->
+                        <span class="media-box-number d-block">
+                            Episode
+                            <em>6</em>
+                        </span>
+                        <!-- Start season -->
+                        <span class="season">
+                            <i class="icofont-book-mark"></i>
+                            S03
+                        </span>
+                    </div>
+                    <!-- Start rate-quality-info -->
+                    <div class="rate-quality-info">
+                        <span class="media-badge bg-dark">HD</span>
+                        <span class="rate icofont-star">8.5</span>
+                    </div>
+                    <div class="media-info">
+                        <a href="episodes.html" class="media-box-category">
+                            <i class="icofont-video-alt"></i>
+                            English TV series
+                        </a>
+                        <h5 class="media-box-title">Mythic Quest - Season 3</h5>
+                    </div>
+                </div>
+                <!-- end media-box -->
+            </div>
+        </div>
+    </div>
+
+    <section class="all-media">
+        <!-- Start top-media -->
+        <div class="top-media-header"></div>
+        <div class="container mt--45">
+            <div class="filter-group flex-column flex-lg-row">
+                <div class="home-adv-filter row m-0 mb-3 mb-lg-0">
+                    <!-- Start advanced filter -->
+                    <div class="col-12">
+                        <h6 class="text-white mb-3">
+                            <i class="icofont-filter"></i>
+                            Advanced Filter
+                        </h6>
+                    </div>
+
+                    <div class="dropdown col-6 col-md-3 mb-3 mb-lg-0">
+                        <button type="button" class="btn btn-sm btn-filter dropdown-toggle" data-bs-toggle="dropdown">
+                            Categories
+                        </button>
+                        <ul class="dropdown-menu media-dropdown nice-scroll" onclick="event.stopPropagation()">
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-1" name="option1" value="">
+                                    <label class="form-check-label" for="category-1">All</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-2" name="option1" value="">
+                                    <label class="form-check-label" for="category-2">Movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-3" name="option1" value="">
+                                    <label class="form-check-label" for="category-3">English movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-4" name="option1" value="">
+                                    <label class="form-check-label" for="category-4">Asian movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-5" name="option1" value="">
+                                    <label class="form-check-label" for="category-5">Arabic Movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-6" name="option1" value="">
+                                    <label class="form-check-label" for="category-6">Cartoon movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-7" name="option1" value="">
+                                    <label class="form-check-label" for="category-7">Netflix movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-8" name="option1" value="">
+                                    <label class="form-check-label" for="category-8">Indian movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-9" name="option1" value="">
+                                    <label class="form-check-label" for="category-9">TV shows</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-10" name="option1" value="">
+                                    <label class="form-check-label" for="category-10">Series</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-11" name="option1" value="">
+                                    <label class="form-check-label" for="category-11">English Series</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="category-12" name="option1" value="">
+                                    <label class="form-check-label" for="category-12">Asian series</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown col-6 col-md-3  mb-3 mb-lg-0">
+                        <button type="button" class="btn btn-sm btn-filter dropdown-toggle" data-bs-toggle="dropdown">
+                            Type
+                        </button>
+                        <ul class="dropdown-menu media-dropdown nice-scroll" onclick="event.stopPropagation()">
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-1" name="types" value="">
+                                    <label class="form-check-label" for="types-1">All</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-2" name="types" value="">
+                                    <label class="form-check-label" for="types-2">Movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-3" name="types" value="">
+                                    <label class="form-check-label" for="types-3">English movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-4" name="types" value="">
+                                    <label class="form-check-label" for="types-4">Asian movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-5" name="types" value="">
+                                    <label class="form-check-label" for="types-5">Arabic Movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-6" name="types" value="">
+                                    <label class="form-check-label" for="types-6">Cartoon movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-7" name="types" value="">
+                                    <label class="form-check-label" for="types-7">Netflix movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-8" name="types" value="">
+                                    <label class="form-check-label" for="types-8">Indian movies</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-9" name="types" value="">
+                                    <label class="form-check-label" for="types-9">TV shows</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-10" name="types" value="">
+                                    <label class="form-check-label" for="types-10">Series</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-11" name="types" value="">
+                                    <label class="form-check-label" for="types-11">English Series</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="types-12" name="types" value="">
+                                    <label class="form-check-label" for="types-12">Asian series</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown col-6 col-md-3  mb-3 mb-md-0-">
+                        <button type="button" class="btn btn-sm btn-filter dropdown-toggle w-100" data-bs-toggle="dropdown">
+                            Year
+                        </button>
+                        <ul class="dropdown-menu media-dropdown nice-scroll" onclick="event.stopPropagation()">
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-1" name="option1" value="">
+                                    <label class="form-check-label" for="year-1">All</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-2" name="option1" value="">
+                                    <label class="form-check-label" for="year-2">2000</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-3" name="option1" value="">
+                                    <label class="form-check-label" for="year-3">2001</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-4" name="option1" value="">
+                                    <label class="form-check-label" for="year-4">2002</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-5" name="option1" value="">
+                                    <label class="form-check-label" for="year-5">2003</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-6" name="option1" value="">
+                                    <label class="form-check-label" for="year-6">2004</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-7" name="option1" value="">
+                                    <label class="form-check-label" for="year-7">2005</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-8" name="option1" value="">
+                                    <label class="form-check-label" for="year-8">2006</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-9" name="option1" value="">
+                                    <label class="form-check-label" for="year-9">2007</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-10" name="option1" value="">
+                                    <label class="form-check-label" for="year-10">2008</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-11" name="option1" value="">
+                                    <label class="form-check-label" for="year-11">2009</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="year-12" name="option1" value="">
+                                    <label class="form-check-label" for="year-12">2010</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="dropdown col-6 col-md-3  mb-3 mb-md-0">
+                        <button type="button" class="btn btn-sm btn-filter dropdown-toggle" data-bs-toggle="dropdown">
+                            Quality
+                        </button>
+                        <ul class="dropdown-menu media-dropdown nice-scroll" onclick="event.stopPropagation()">
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="quality-1" name="quality" value="">
+                                    <label class="form-check-label" for="quality-1">All</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="quality-2" name="quality" value="">
+                                    <label class="form-check-label" for="quality-2">HD</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="quality-3" name="quality" value="">
+                                    <label class="form-check-label" for="quality-3">CAM</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="quality-4" name="quality" value="">
+                                    <label class="form-check-label" for="quality-4">4k</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="quality-5" name="quality" value="">
+                                    <label class="form-check-label" for="quality-5">720</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="quality-6" name="quality" value="">
+                                    <label class="form-check-label" for="quality-6">480</label>
+                                </div>
+                            </li>
+                            <li class="dropdown-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="quality-7" name="quality" value="">
+                                    <label class="form-check-label" for="quality-7">360</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <ul class="tabs-filter nice-scroll">
+                    <li class="active">
+                        <i class="icofont-history"></i>
+                        <span>Recently Added</span>
+                    </li>
+                    <li>
+                        <i class="icofont-eye-alt"></i>
+                        <span>Most watched</span>
+                    </li>
+                    <li>
+                        <i class="icofont-heart-alt"></i>
+                        <span>Most Liked</span>
+                    </li>
+                    <li>
+                        <i class="icofont-favourite"></i>
+                        <span>Top Rated</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container-fluid mt-2">
+            <div class="row row-cols-2 row-cols-sm-4 row-cols-lg-5">
+                <!-- start media-box -->
+                <div class="col mt-3">
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/lady-chatterley-s-lover-1630854523.jpg);">
+                        </div>
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">8.9</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                English Movies
+                            </a>
+                            <h5 class="media-box-title">Lady Chatterley's Lover</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- end media-box -->
+
+                <!-- start media-box -->
+                <div class="col mt-3">
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/puss-in-boots-the-last-wish-1630854551.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">CAM</span>
+                            <span class="rate icofont-star">7.8</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">Puss in Boots: The Last Wish</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- end media-box -->
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-episode.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/fire-country-season-1-1630854296.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-episode.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start episode-info -->
+                        <div class="episode-info">
+                            <!-- Start media-box-number -->
+                            <span class="media-box-number d-block">
+                                Episode
+                                <em>8</em>
+                            </span>
+                            <!-- Start season -->
+                            <span class="season">
+                                <i class="icofont-book-mark"></i>
+                                S01
+                            </span>
+                        </div>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">8.5</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="episodes.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                English TV series
+                            </a>
+                            <h5 class="media-box-title">Fire Country - Season 1</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-episode.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/dragon-age-absolution-season-1-1630854561.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-episode.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start episode-info -->
+                        <div class="episode-info">
+                            <!-- Start media-box-number -->
+                            <span class="media-box-number d-block">
+                                Episode
+                                <em>6</em>
+                            </span>
+                            <!-- Start season -->
+                            <span class="season">
+                                <i class="icofont-book-mark"></i>
+                                S01
+                            </span>
+                        </div>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">8.8</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="episodes.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                English TV series
+                            </a>
+                            <h5 class="media-box-title">Dragon Age: Absolution - Season 1</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/the-banshees-of-inisherin-1630854552.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">CAM</span>
+                            <span class="rate icofont-star">8.5</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">The Banshees of Inisherin</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/hawa-1630854558.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.3</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">Hawa</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-episode.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/step-up-high-water-season-3-1630854303.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-episode.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start episode-info -->
+                        <div class="episode-info">
+                            <!-- Start media-box-number -->
+                            <span class="media-box-number d-block">
+                                Episode
+                                <em>9</em>
+                            </span>
+                            <!-- Start season -->
+                            <span class="season">
+                                <i class="icofont-book-mark"></i>
+                                S03
+                            </span>
+                        </div>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">8.8</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="episodes.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                English TV series
+                            </a>
+                            <h5 class="media-box-title">Step Up: High Water - Season 3</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-episode.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/s-w-a-t-season-6-1630854293.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-episode.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start episode-info -->
+                        <div class="episode-info">
+                            <!-- Start media-box-number -->
+                            <span class="media-box-number d-block">
+                                Episode
+                                <em>8</em>
+                            </span>
+                            <!-- Start season -->
+                            <span class="season">
+                                <i class="icofont-book-mark"></i>
+                                S06
+                            </span>
+                        </div>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">8.7</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="episodes.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                English TV series
+                            </a>
+                            <h5 class="media-box-title">SWAT - Season 6</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/emancipation-1630854535.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.4</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">Emancipation</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/christmas-bloody-christmas-1630854554.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.5</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">Christmas Bloody Christmas</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-episode.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/three-pines-season-1-1630854521.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-episode.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start episode-info -->
+                        <div class="episode-info">
+                            <!-- Start media-box-number -->
+                            <span class="media-box-number d-block">
+                                Episode
+                                <em>3</em>
+                            </span>
+                            <!-- Start season -->
+                            <span class="season">
+                                <i class="icofont-book-mark"></i>
+                                S01
+                            </span>
+                        </div>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">8.5</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="episodes.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                English TV series
+                            </a>
+                            <h5 class="media-box-title">Three Pines - Season 1</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-episode.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/let-the-right-one-in-season-1-1630854235.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-episode.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start episode-info -->
+                        <div class="episode-info">
+                            <!-- Start media-box-number -->
+                            <span class="media-box-number d-block">
+                                Episode
+                                <em>10</em>
+                            </span>
+                            <!-- Start season -->
+                            <span class="season">
+                                <i class="icofont-book-mark"></i>
+                                S01
+                            </span>
+                        </div>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.0</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="episodes.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                English TV series
+                            </a>
+                            <h5 class="media-box-title">Let the Right One In - Season 1</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/the-soccer-football-movie-1630854557.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.0</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">The Soccer Football Movie</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/detective-knight-redemption-1630854553.webp);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.5</span>
+                        </div>
+
+                        <!-- Start media-info -->
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">Detective Knight: Redemption</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/pinocchio-1630854560.webp);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.5</span>
+                        </div>
+
+                        <!-- Start media-info -->
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">Pinocchio</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-episode.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/saturday-night-live-season-48-1630854206.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-episode.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start episode-info -->
+                        <div class="episode-info">
+                            <!-- Start media-box-number -->
+                            <span class="media-box-number d-block">
+                                Episode
+                                <em>08</em>
+                            </span>
+                            <!-- Start season -->
+                            <span class="season">
+                                <i class="icofont-book-mark"></i>
+                                S48
+                            </span>
+                        </div>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.0</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="episodes.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                English TV series
+                            </a>
+                            <h5 class="media-box-title">Saturday Night Live - Season 48</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-episode.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/blue-bloods-season-13-1630854297.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-episode.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+                        <!-- Start episode-info -->
+                        <div class="episode-info">
+                            <!-- Start media-box-number -->
+                            <span class="media-box-number d-block">
+                                Episode
+                                <em>08</em>
+                            </span>
+                            <!-- Start season -->
+                            <span class="season">
+                                <i class="icofont-book-mark"></i>
+                                S13
+                            </span>
+                        </div>
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.2</span>
+                        </div>
+                        <div class="media-info">
+                            <a href="episodes.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                English TV series
+                            </a>
+                            <h5 class="media-box-title">Blue Bloods - Season 13</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/night-at-the-museum-kahmunrah-rises-again-1630854559.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.8</span>
+                        </div>
+
+                        <!-- Start media-info -->
+                        <div class="media-info">
+                            <a href="episodes.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">Night at the Museum: Kahmunrah Rises Again</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/black-adam-1630854343.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">9.7</span>
+                        </div>
+
+                        <!-- Start media-info -->
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">Black Adam</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+
+                <div class="col mt-3">
+                    <!-- start media-box -->
+                    <div class="media-box">
+                        <a href="single-movie.html" class="full-click"></a>
+                        <div class="media-thumb" style="background-image: url(images/the-guardians-of-the-galaxy-holiday-special-1630854485.jpg);">
+                        </div>
+
+                        <!-- Start media-play -->
+                        <a href="single-movie.html" class="media-play">
+                            <i class="icofont-ui-play"></i>
+                        </a>
+
+                        <!-- Start rate-quality-info -->
+                        <div class="rate-quality-info">
+                            <span class="media-badge bg-dark">HD</span>
+                            <span class="rate icofont-star">8.6</span>
+                        </div>
+
+                        <!-- Start media-info -->
+                        <div class="media-info">
+                            <a href="movies.html" class="media-box-category">
+                                <i class="icofont-video-alt"></i>
+                                Movies
+                            </a>
+                            <h5 class="media-box-title">The Guardians of the Galaxy Holiday Special</h5>
+                        </div>
+                    </div>
+                    <!-- end media-box -->
+                </div>
+            </div>
+
+            <!-- Start pagination -->
+            <ul class="pagination aster-pagination justify-content-center mt-5 mb-5">
+                <li class="page-item">
+                    <a class="page-link" href="index.html">
+                        <i class="icofont-simple-left"></i>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="index.html">1</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="index.html">2</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="index.html">3</a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="index.html">5</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="index.html">5</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="index.html">6</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="index.html">
+                        <i class="icofont-simple-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Start Categories footer-navbar -->
+        <nav class="navbar footer-navbar">
+            <div class="container">
+                <ul class="nav footer-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">English movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Arabic Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Netflix movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">TV programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">English Series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Asian series</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">TV shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Indian movies</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="copy-right pt-4 pb-4">
+            <div class="container">
+                <div class="text-center">
+                    <p>Copyright © Aster-Cima With over +10000 Movies and Series for Free </p>
+                    <i>
+                        <small>This site does not store any files on our server, we only linked to the media which is
+                            hosted on 3rd party services.</small>
+                    </i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal login-modal" id="login-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <button type="button" class="modal-right-close" data-bs-dismiss="modal">
+                        <i class="icofont-close"></i>
+                    </button>
+
+                    <h5 class="modal-title text-center text-white"><i class="icofont-wink-smile"></i> Welcome back!</h5>
+
+                    <form action="index.html" method="get">
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="icofont-at"></i></span>
+                                <input id="email" type="text" class="form-control" placeholder="Username">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="icofont-key"></i></span>
+                                <input id="pwd" type="password" class="form-control" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-block"><i class="icofont-login"></i> Login</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer text-center">
+                    Don't have an account? <a href="javascript:void(0)" title="Register" class="link-highlight">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/app.js"></script>
+
+
+</body></html>
